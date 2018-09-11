@@ -22,7 +22,7 @@ syn region embeddedTs
       \ matchgroup=NONE
       \ start=+{+
       \ end=+}+
-      \ contains=@Spell,@typescriptAll,xmlEntity, embeddedTsStart, embeddedTsEnd
+      \ contains=@Spell,@typescriptAll,xmlEntity, embeddedTsStart, embeddedTsEnd, tsxRegion
       \ contained
       \ keepend
 
@@ -90,26 +90,26 @@ syn match tsxComponent /[A-Z][A-Za-z0-9]*/
 
 
 syn cluster xmlTagHook add=tsxIntrinsicElement
-syn keyword tsxIntrinsicElement display a abbr address area article aside audio b base bdi
-syn keyword tsxIntrinsicElement display bdo big blockquote body br button canvas caption cite code
-syn keyword tsxIntrinsicElement display col colgroup data datalist dd del details dfn dialog div
-syn keyword tsxIntrinsicElement display dl dt em embed fieldset figcaption figure footer form h1
-syn keyword tsxIntrinsicElement display h2 h3 h4 h5 h6 head header hgroup hr html
-syn keyword tsxIntrinsicElement display i iframe img input ins kbd keygen label legend li
-syn keyword tsxIntrinsicElement display link main map mark menu menuitem meta meter nav noindex
-syn keyword tsxIntrinsicElement display noscript object ol optgroup option output p param picture pre
-syn keyword tsxIntrinsicElement display progress q rp rt ruby s samp script section select
-syn keyword tsxIntrinsicElement display small source span strong style sub summary sup table tbody
-syn keyword tsxIntrinsicElement display td textarea tfoot th thead time title tr track u
-syn keyword tsxIntrinsicElement display ul video wbr webview svg animate animateTransform circle clipPath defs
-syn keyword tsxIntrinsicElement display desc ellipse feBlend feColorMatrix feComponentTransfer feComposite
-syn keyword tsxIntrinsicElement display feConvolveMatrix feDiffuseLighting feDisplacementMap feDistantLight
-syn keyword tsxIntrinsicElement display feFlood feFuncA feFuncB feFuncG feFuncR feGaussianBlur feImage feMerge
-syn keyword tsxIntrinsicElement display feMergeNode feMorphology
-syn keyword tsxIntrinsicElement display feOffset fePointLight feSpecularLighting feSpotLight feTile feTurbulence
-syn keyword tsxIntrinsicElement display filter foreignObject g image
-syn keyword tsxIntrinsicElement display line linearGradient marker mask metadata path pattern polygon polyline
-syn keyword tsxIntrinsicElement display radialGradient rect stop switch symbol text textPath tspan use view
+syn keyword tsxIntrinsicElement display contained a abbr address area article aside audio b base bdi
+syn keyword tsxIntrinsicElement display contained bdo big blockquote body br button canvas caption cite code
+syn keyword tsxIntrinsicElement display contained col colgroup data datalist dd del details dfn dialog div
+syn keyword tsxIntrinsicElement display contained dl dt em embed fieldset figcaption figure footer form h1
+syn keyword tsxIntrinsicElement display contained h2 h3 h4 h5 h6 head header hgroup hr html
+syn keyword tsxIntrinsicElement display contained i iframe img input ins kbd keygen label legend li
+syn keyword tsxIntrinsicElement display contained link main map mark menu menuitem meta meter nav noindex
+syn keyword tsxIntrinsicElement display contained noscript object ol optgroup option output p param picture pre
+syn keyword tsxIntrinsicElement display contained progress q rp rt ruby s samp script section select
+syn keyword tsxIntrinsicElement display contained small source span strong style sub summary sup table tbody
+syn keyword tsxIntrinsicElement display contained td textarea tfoot th thead time title tr track u
+syn keyword tsxIntrinsicElement display contained ul video wbr webview svg animate animateTransform circle clipPath defs
+syn keyword tsxIntrinsicElement display contained desc ellipse feBlend feColorMatrix feComponentTransfer feComposite
+syn keyword tsxIntrinsicElement display contained feConvolveMatrix feDiffuseLighting feDisplacementMap feDistantLight
+syn keyword tsxIntrinsicElement display contained feFlood feFuncA feFuncB feFuncG feFuncR feGaussianBlur feImage feMerge
+syn keyword tsxIntrinsicElement display contained feMergeNode feMorphology
+syn keyword tsxIntrinsicElement display contained feOffset fePointLight feSpecularLighting feSpotLight feTile feTurbulence
+syn keyword tsxIntrinsicElement display contained filter foreignObject g image
+syn keyword tsxIntrinsicElement display contained line linearGradient marker mask metadata path pattern polygon polyline
+syn keyword tsxIntrinsicElement display contained radialGradient rect stop switch symbol text textPath tspan use view
 
 
 syn cluster @typescriptAll add=tsxRegion
