@@ -86,7 +86,7 @@ syn region tsxRegion
 hi def link embeddedTs NONE
 
 syn cluster xmlTagHook add=tsxComponent
-syn match tsxComponent /[A-Z][A-Za-z0-9]*/
+syn match tsxComponent /\<[A-Z][A-Za-z0-9]*/
 
 
 syn cluster xmlTagHook add=tsxIntrinsicElement
